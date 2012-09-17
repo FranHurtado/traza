@@ -9,17 +9,19 @@ body
 
 #page
 {
-	margin-top: 5px;
 	margin-bottom: 5px;
-	background: white;
-	border: 1px solid #C9E0ED;
+	background: #7d7c7c;
 }
 
 #header
 {
+	width: 96%;
 	margin: 0;
-	padding: 0;
-	border-top: 3px solid #C9E0ED;
+	padding: 12px 20px 12px 20px;
+	font-size: 150%;
+	color: #efefef;
+	height: 30px;
+	background: url(../images/bckHeader.jpg) repeat-x;
 }
 
 #content
@@ -227,3 +229,63 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
+.contentbox
+{
+	background: #d3d3d3!important;
+	position: relative;
+}
+
+.contentbox .title
+{
+	width: 100%;
+	background: url(../images/bckTitle.jpg) repeat-x;
+	margin-bottom: 20px;
+}
+
+.contentbox .title h1
+{
+	width: 100%;
+	font-size: 95%;
+	padding: 5px 0 5px 0;
+	color: white;
+	text-align: center;
+}
+
+#login
+{
+	width: 300px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#mainmenu
+{
+	width: 350px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#mainmenu .button
+{
+	width: 140px;
+	height: 60px;
+	padding: 0;
+	background: #4185c2;
+	border: 2px solid #152d41;
+	margin: 15px !important;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	display: table;
+}
+
+#mainmenu p
+{
+	vertical-align: middle;
+	color: white;
+	font-size: 100%;
+	display: table-cell;
+}
+
+#mainmenu a { color: white; text-decoration: none; font-weight: bold; }
