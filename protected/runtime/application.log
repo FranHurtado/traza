@@ -1,0 +1,45 @@
+2012/09/17 14:24:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'traza_user'@'localhost' (using password: YES)' in /Applications/MAMP/htdocs/Traza/YII/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/Traza/YII/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/Traza/YII/base/CModule.php(388): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/Traza/YII/base/CModule.php(104): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/Traza/YII/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CFormModel.php(40): ModelCode->init()
+#6 /Applications/MAMP/htdocs/Traza/YII/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /Applications/MAMP/htdocs/Traza/YII/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('')
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Traza/Traza/index.php/gii/model
+---
+2012/09/17 15:42:07 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity._id" is not defined.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/components/UserIdentity.php(40): CComponent->__set('_id', '20')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#2 /Applications/MAMP/htdocs/Traza/YII/validators/CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/validators/CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /Applications/MAMP/htdocs/Traza/YII/base/CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/controllers/SiteController.php(90): CModel->validate()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#14 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('login')
+#16 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/Traza/Traza/index.php/site/login
+---
