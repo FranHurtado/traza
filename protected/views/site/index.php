@@ -11,8 +11,8 @@ $this->pageTitle=Yii::app()->name;
 	</div>
 	
 	<div id="menu">
-		<div class="button"><p><a href="#">Trazabilidad</a></p></div>
-		<div class="button"><p><a href="#">APPC</a></p></div>
+		<div class="button"><p><a href="<?php echo Yii::app()->createURL("Trazabilidad/default/index"); ?>">Trazabilidad</a></p></div>
+		<div class="button"><p><a href="<?php echo Yii::app()->createURL("APPC/default/index"); ?>">APPC</a></p></div>
 		<div class="clear"></div>
 	</div>
 
