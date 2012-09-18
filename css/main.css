@@ -270,6 +270,7 @@ div.search-form
 {
 	width: 140px;
 	height: 60px;
+	font-size: 120%;
 	padding: 0;
 	background: #4185c2;
 	border: 2px solid #152d41;
@@ -278,12 +279,16 @@ div.search-form
 	position: relative;
 	float: left;
 	display: table;
+	-webkit-box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    3px 3px 3px rgba(50, 50, 50, 0.5);
+	box-shadow:         3px 3px 3px rgba(50, 50, 50, 0.5);
 }
 
 #mainmenu .buttonA
 {
 	width: 140px;
 	height: 60px;
+	font-size: 120%;
 	padding: 0;
 	background: #31bc90;
 	border: 2px solid #152d41;
@@ -292,6 +297,9 @@ div.search-form
 	position: relative;
 	float: left;
 	display: table;
+	-webkit-box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    3px 3px 3px rgba(50, 50, 50, 0.5);
+	box-shadow:         3px 3px 3px rgba(50, 50, 50, 0.5);
 }
 
 #mainmenu p
