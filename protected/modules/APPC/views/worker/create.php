@@ -8,11 +8,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Worker', 'url'=>array('index')),
-	array('label'=>'Manage Worker', 'url'=>array('admin')),
+	array('label'=>'Ver Operarios', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Worker</h1>
+<h1>Crear nuevo operario</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

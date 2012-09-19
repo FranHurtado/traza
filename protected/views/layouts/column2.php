@@ -9,12 +9,17 @@
 	<div id="sidebar">
 	<?php
 		$this->beginWidget('zii.widgets.CPortlet', array(
-			'title'=>'Operations',
 		));
 		$this->widget('zii.widgets.CMenu', array(
 			'items'=>$this->menu,
 			'htmlOptions'=>array('class'=>'operations'),
 		));
+		
+		?><br />
+		<h1>Ayuda</h1>
+		<p><?php echo $this->help; ?></p>
+		<?php
+		
 		$this->endWidget();
 	?>
 	</div><!-- sidebar -->

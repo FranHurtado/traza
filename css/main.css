@@ -31,7 +31,7 @@ body
 
 #sidebar
 {
-	padding: 20px 20px 20px 0;
+	padding: 20px;
 }
 
 #footer
@@ -181,7 +181,7 @@ div.search-form
 	font-size:0.9em;
 	margin: 0 0 15px 0;
 	padding: 5px 8px;
-	background:#EFFDFF;
+	background:none;
 }
 
 .portlet-content ul
@@ -189,13 +189,40 @@ div.search-form
 	list-style-image:none;
 	list-style-position:outside;
 	list-style-type:none;
+	background: #dedede;
+	color: #333;
+	border: 1px solid #666;
 	margin: 0;
 	padding: 0;
 }
 
 .portlet-content li
 {
-	padding: 2px 0 4px 0px;
+	padding: 15px 0!important;
+}
+
+.portlet-content h1
+{
+	max-width: 40px;
+	font-size: 110%;
+	font-weight: bold;
+	margin: 10px 0 5px 2px;
+	color: white;
+	background-color: #7D7C7C;
+	text-align: center;
+	padding: 0 5px;
+	z-index: 2;
+}
+
+.portlet-content p
+{
+	font-size: 90%;
+	text-align: left;
+	margin: 0;
+	color: #cdcdcd;
+	border: 1px solid #ababab;
+	padding: 5px 8px 5px 8px;
+	z-index: 1;
 }
 
 .operations
@@ -212,22 +239,18 @@ div.search-form
 
 .operations li a
 {
-	font: bold 12px Arial;
-	color: #0066A4;
+	font: bold 11pt Arial;
+	color: #666!important;
 	display: block;
 	padding: 2px 0 2px 8px;
 	line-height: 15px;
 	text-decoration: none;
+	text-align: center
 }
 
 .operations li a:visited
 {
 	color: #0066A4;
-}
-
-.operations li a:hover
-{
-	background: #80CFFF;
 }
 
 .contentbox
@@ -317,3 +340,92 @@ div.search-form
 }
 
 #mainmenu a { color: white; text-decoration: none; font-weight: bold; }
+
+
+
+/*
+ * Grid view CSS Styles
+ */
+ 
+.grid-view table.items 
+{
+    background: #dedede!important;
+    border: none!important;
+}
+
+.grid-view table.items th, .grid-view table.items td 
+{
+    border: none !important;
+    margin: 10px!important;
+}
+
+.grid-view .empty 
+{
+	font-size: 140%!important;
+    font-style: normal!important;
+    color: white!important;
+    text-align: center!important;
+    padding: 20px 0 !important;
+}
+
+.grid-view table.items tr.even, tr.odd, tr.filters 
+{
+    border-left: 10px solid #dedede!important;
+    border-right: 10px solid #dedede!important;
+}
+
+.grid-view table.items tr.odd td 
+{
+    background: #7D7C7C!important;
+    margin: 10px!important;
+    border-top:10px solid #dedede!important;
+    border-bottom: 10px solid #dedede!important;
+    padding: 15px 10px!important;
+    font-size: 120%;
+    color: white;
+}
+
+.grid-view table.items tr.even td 
+{
+    background: #7D7C7C !important;
+    border-top: 10px solid #dedede!important;
+    border-bottom: 10px solid #dedede!important;
+    padding: 15px 10px!important;
+    font-size: 120%;
+    color: white;
+}
+
+.grid-view table.items tr.filters td 
+{
+    padding: 15px 0 5px 0!important;
+}
+
+.grid-view table.items tr.filters td input
+{
+    font-size: 110%!important;
+    padding: 5px!important;
+}
+
+.grid-view .summary 
+{
+    margin: 0 0 5px 0!important;
+    text-align: left!important;
+    color: white!important;
+}
+
+.grid-view .button-column 
+{
+	width: 155px!important;
+}
+
+.grid-view .button-column a.update, a.delete
+{
+	font-size: 110%;
+	display: inline!important;
+	color: white;
+	text-decoration: none;
+	background: #4185c2;
+	border: 1px solid #333;
+	padding: 10px 8px;
+	margin: 0 4px;
+}

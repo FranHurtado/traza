@@ -67,10 +67,10 @@ class Worker extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Fullname' => 'Fullname',
-			'DNI' => 'Dni',
-			'Birthdate' => 'Birthdate',
-			'Gender' => 'Gender',
+			'Fullname' => 'Nombre completo: ',
+			'DNI' => 'DNI: ',
+			'Birthdate' => 'Fecha nac.: ',
+			'Gender' => 'G&eacute;nero: ',
 		);
 	}
 
