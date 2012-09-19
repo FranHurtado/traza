@@ -246,15 +246,15 @@ div.search-form
 .contentbox .titleV 
 {
 	width: 100%;
-	background: url(../images/bckTitleV4.jpg) repeat-x;
+	background: url(../images/bckTitleV.jpg) repeat-x;
 	margin-bottom: 20px;
 }
 
 .contentbox .title h1, .contentbox .titleV h1
 {
 	width: 100%;
-	font-size: 150%;
-	padding: 8px 0 5px 0;
+	font-size: 140%;
+	padding: 8px 0 9px 0;
 	color: white;
 	text-align: center;
 }
@@ -264,7 +264,7 @@ div.search-form
 #login
 {
 	width: 300px;
-	margin: 20px auto;
+	margin: 40px auto;
 	text-align: center;
 }
 

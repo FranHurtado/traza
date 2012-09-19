@@ -20,4 +20,4 @@
 
 </div>
 
-<a href="<?php echo Yii::app()->user->returnURL; ?>" class="backButtonV">Volver</a>
+<a href="<?php echo Yii::app()->user->returnURL; ?>" class="backButton">Volver</a>
