@@ -21,13 +21,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'DNI'); ?>
-		<?php echo $form->textField($model,'DNI',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->textField($model,'DNI',array('size'=>14,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'DNI'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Birthdate'); ?>
-		<?php echo $form->textField($model,'Birthdate', array('size'=>10,'placeholder'=>'aaaa-mm-dd')); ?>
+		<?php echo $form->textField($model,'Birthdate', array('size'=>14,'placeholder'=>'aaaa-mm-dd')); ?>
 		<?php echo $form->error($model,'Birthdate'); ?>
 	</div>
 
