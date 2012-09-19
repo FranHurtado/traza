@@ -11,7 +11,7 @@
 	
 	<div id="menu">
 		<div class="buttonA"><p><a href="<?php echo Yii::app()->createURL("APPC/worker"); ?>">Operarios</a></p></div>
-		<div class="buttonA"><p><a href="#">Puntos Cr&iacute;ticos</a></p></div>
+		<div class="buttonA"><p><a href="<?php echo Yii::app()->createURL("APPC/point"); ?>">Puntos Cr&iacute;ticos</a></p></div>
 		<div class="buttonA"><p><a href="#">Controles</a></p></div>
 		<div class="buttonA"><p><a href="#">Informes</a></p></div>
 		<div class="buttonA"><p><a href="#">Alertas</a></p></div>

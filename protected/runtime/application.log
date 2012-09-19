@@ -806,3 +806,88 @@ REQUEST_URI=/Traza/Traza/index.php/APPC/worker/update/id/4
 in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/views/worker/_form.php (17)
 in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/views/worker/update.php (12)
 in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/WorkerController.php (92)
+2012/09/19 16:18:05 [error] [exception.CException] exception 'CException' with message 'PointController cannot find the requested view "_search".' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/views/point/admin.php(40): CController->renderPartial('_search', Array)
+#1 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/PointController.php(140): CController->render('admin', Array)
+#6 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/PointController.php(125): PointController->actionAdmin()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): PointController->actionIndex()
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#15 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('')
+#17 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/point')
+#18 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/point
+---
+2012/09/19 16:26:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Applications/MAMP/htdocs/Traza/YII/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('admin')
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/point/admi...')
+#9 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/point/admin
+---
+2012/09/19 16:29:41 [error] [exception.CException] exception 'CException' with message 'PointController cannot find the requested view "view".' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(783): CController->renderPartial('view', Array, true)
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/PointController.php(56): CController->render('view', Array)
+#2 [internal function]: PointController->actionView('1')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PointController), Array)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PointController), Object(ReflectionMethod), Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('view')
+#14 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/point/view...')
+#15 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/point/view/id/1
+---
+2012/09/19 16:30:04 [error] [exception.CException] exception 'CException' with message 'PointController cannot find the requested view "view".' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(783): CController->renderPartial('view', Array, true)
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/PointController.php(56): CController->render('view', Array)
+#2 [internal function]: PointController->actionView('1')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PointController), Array)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PointController), Object(ReflectionMethod), Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('view')
+#14 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/point/view...')
+#15 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/point/view/id/1
+---

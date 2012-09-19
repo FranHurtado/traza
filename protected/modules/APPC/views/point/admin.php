@@ -1,26 +1,25 @@
 <?php
-/* @var $this WorkerController */
-/* @var $model Worker */
-
+/* @var $this PointController */
+/* @var $model Point */
 
 $this->menu=array(
-	array('label'=>'Nuevo Operario', 'url'=>array('create')),
+	array('label'=>'Nuevo Punto Critico', 'url'=>array('create')),
 );
 
-$this->help = "- Para crear un nuevo operario pulsa el bot&oacute;n \"Nuevo operario\".<br /><br />
+$this->help = "- Para crear un nuevo punto cr&iacute;tico pulsa el bot&oacute;n \"Nuevo Punto Critico\".<br /><br />
 			   - Puede realizar busquedas escribiendo en las cabeceras de los campos."; 
 
 ?>
 
-<h1>Listado de operarios</h1>
+<h1>Listado de puntos cr&iacute;ticos</h1>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'worker-grid',
+	'id'=>'point-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'hideHeader'=>true,
 	'columns'=>array(
-		'Fullname',
+		'Name',
 		array(	
 	        'class'=>'CButtonColumn',
 	        'template'=>'{update} {delete}',

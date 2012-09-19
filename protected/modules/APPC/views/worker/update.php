@@ -5,6 +5,9 @@
 $this->menu=array(
 	array('label'=>'Ver Operarios', 'url'=>array('admin')),
 );
+
+$this->help="- Modifica los campos del formulario que necesites y pulsa guardar.";
+
 ?>
 
 <h1>Modificar al operario:</h1><br />
