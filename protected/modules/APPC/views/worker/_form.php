@@ -11,8 +11,6 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
@@ -29,18 +27,18 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Birthdate'); ?>
-		<?php echo $form->textField($model,'Birthdate'); ?>
+		<?php echo $form->textField($model,'Birthdate', array('size'=>10,'placeholder'=>'aaaa-mm-dd')); ?>
 		<?php echo $form->error($model,'Birthdate'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Gender'); ?>
-		<?php echo $form->textField($model,'Gender'); ?>
+		<?php echo $form->dropDownList($model,'Gender',array(0=>'Hombre',1=>'Mujer')); ?>
 		<?php echo $form->error($model,'Gender'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton('Guardar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

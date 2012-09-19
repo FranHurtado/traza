@@ -44,3 +44,5 @@ $this->help = "- Para crear un nuevo operario pulsa el bot&oacute;n \"Nuevo oper
 	$dp = $model->search();
 	if($dp->totalItemCount == 0){ ?> <script>$(".filters").hide();</script> <?php }
 ?>
+
+<a href="<?php echo Yii::app()->createURL("APPC"); ?>" class="backButton">Men&uacute;</a>

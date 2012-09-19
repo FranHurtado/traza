@@ -38,7 +38,7 @@ class Worker extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Fullname', 'required'),
+			array('Fullname, Birthdate', 'required'),
 			array('Gender', 'numerical', 'integerOnly'=>true),
 			array('Fullname', 'length', 'max'=>150),
 			array('DNI', 'length', 'max'=>10),

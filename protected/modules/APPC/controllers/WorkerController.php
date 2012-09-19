@@ -60,7 +60,7 @@ class WorkerController extends Controller
 		{
 			$model->attributes=$_POST['Worker'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect(array('admin'));
 		}
 
 		$this->render('create',array(
@@ -84,7 +84,7 @@ class WorkerController extends Controller
 		{
 			$model->attributes=$_POST['Worker'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect(array('admin'));
 		}
 
 		$this->render('update',array(
