@@ -5,7 +5,7 @@
 
 <div class="contentbox" id="mainmenu" style="width:700px;">
 	
-	<div class="title">
+	<div class="titleV">
 		<h1>Men&uacute; de APPC</h1>
 	</div>
 	
@@ -20,4 +20,4 @@
 
 </div>
 
-<a href="<?php echo Yii::app()->user->returnURL; ?>" class="backButton">Volver</a>
+<a href="<?php echo Yii::app()->user->returnURL; ?>" class="backButtonV">Volver</a>

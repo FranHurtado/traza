@@ -236,21 +236,30 @@ div.search-form
 	position: relative;
 }
 
-.contentbox .title
+.contentbox .title 
 {
 	width: 100%;
 	background: url(../images/bckTitle.jpg) repeat-x;
 	margin-bottom: 20px;
 }
 
-.contentbox .title h1
+.contentbox .titleV 
 {
 	width: 100%;
-	font-size: 95%;
-	padding: 5px 0 5px 0;
+	background: url(../images/bckTitleV4.jpg) repeat-x;
+	margin-bottom: 20px;
+}
+
+.contentbox .title h1, .contentbox .titleV h1
+{
+	width: 100%;
+	font-size: 150%;
+	padding: 8px 0 5px 0;
 	color: white;
 	text-align: center;
 }
+
+
 
 #login
 {
@@ -278,10 +287,8 @@ div.search-form
 	cursor: pointer;
 	position: relative;
 	float: left;
-	display: table;
-	-webkit-box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.5);
-	-moz-box-shadow:    3px 3px 3px rgba(50, 50, 50, 0.5);
-	box-shadow:         3px 3px 3px rgba(50, 50, 50, 0.5);
+	
+	behavior: url(PIE.php);
 }
 
 #mainmenu .buttonA
@@ -296,18 +303,17 @@ div.search-form
 	cursor: pointer;
 	position: relative;
 	float: left;
-	display: table;
-	-webkit-box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.5);
-	-moz-box-shadow:    3px 3px 3px rgba(50, 50, 50, 0.5);
-	box-shadow:         3px 3px 3px rgba(50, 50, 50, 0.5);
+	
+	behavior: url(PIE.php);
 }
 
 #mainmenu p
 {
-	vertical-align: middle;
 	color: white;
 	font-size: 100%;
-	display: table-cell;
+	line-height: 60px;
+	
+	behavior: url(PIE.php);
 }
 
 #mainmenu a { color: white; text-decoration: none; font-weight: bold; }

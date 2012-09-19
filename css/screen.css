@@ -268,3 +268,23 @@ input[type=submit]
 	box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6); 
 }
 
+.backButtonV
+{
+	position: absolute;
+	right: 20px;
+	top: 8px;
+	font-size: 80%;
+	font-weight: bold;
+	color: #31bc90;
+	text-decoration: none;
+	background: #dedede;
+	border: 2px solid #666;
+	padding: 8px 15px;
+	-moz-border-radius: 7px; /* Firefox */
+	-webkit-border-radius: 7px; /* Safari, Chrome */
+  	border-radius: 7px; /* CSS3 */
+  	-moz-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6);
+	-webkit-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6);
+	box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6); 
+}
+
