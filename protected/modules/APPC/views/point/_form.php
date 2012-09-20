@@ -11,8 +11,6 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<?php echo $form->errorSummary($model); ?>
-
 	<?php echo $form->hiddenField($model,'UserID', array('value'=>Yii::app()->user->ID)); ?>
 		
 	<div class="row">

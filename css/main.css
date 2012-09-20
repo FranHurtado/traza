@@ -429,3 +429,12 @@ div.search-form
 	padding: 10px 8px;
 	margin: 0 4px;
 }
+
+
+/*
+ * CJUIDatepicker CSS Styles
+ */
+
+.ui-datepicker {
+    width: 19em!important;
+}

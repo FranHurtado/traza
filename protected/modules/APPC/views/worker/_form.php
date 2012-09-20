@@ -11,8 +11,6 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<?php echo $form->errorSummary($model); ?>
-
 	<div class="row">
 		<?php echo $form->labelEx($model,'Fullname'); ?>
 		<?php echo $form->textField($model,'Fullname',array('size'=>60,'maxlength'=>150)); ?>
@@ -27,7 +25,28 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Birthdate'); ?>
-		<?php echo $form->textField($model,'Birthdate', array('size'=>14,'placeholder'=>'aaaa-mm-dd')); ?>
+		<?php
+            $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+              'model'=>$model,
+              'attribute'=>'Birthdate',
+              'value'=>$model->Birthdate,
+              // additional javascript options for the date picker plugin
+              'options'=>array(
+                'changeYear'=>true,
+                'yearRange'=>'1930',
+                'language'=>'es',
+                'dateFormat'=>'yy-mm-dd',
+                'monthNames' => array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"),
+                'monthNamesShort' => array("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"),
+                'dayNames' => array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"),
+                'dayNamesMin' => array('Do','Lu','Ma','Mi','Ju','Vi','Sa'),
+                'defaultDate'=>$model->Birthdate,
+              ),
+              'htmlOptions'=>array(
+                'placeholder'=>'yyyy-mm-dd',
+              ),
+            ));
+        ?>
 		<?php echo $form->error($model,'Birthdate'); ?>
 	</div>
 
