@@ -1029,3 +1029,160 @@ Stack trace:
 REQUEST_URI=/Traza/Traza/index.php/APPC/worker/create
 HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/APPC/worker
 ---
+2012/09/20 17:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "pdf"' in /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('pdf')
+#1 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Traza/Traza/index.php/pdf
+---
+2012/09/20 17:18:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /Applications/MAMP/htdocs/Traza/YII/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('pdf')
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('site/pdf')
+#9 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Traza/Traza/index.php/site/pdf
+---
+2012/09/20 17:38:42 [error] [exception.HTML2PDF_exception] <span style="color: #AA0000; font-weight: bold;">ERREUR n°3</span><br>Fichier : /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_class/parsingHtml.class.php<br>Ligne : 117<br><br>Code HTML non valide, une balise est fermée en trop : <b>&lt;td&gt;</b><br><br>HTML : ...e Analisis Puntos Criticos&lt;/p&gt;&lt;/td&gt;
+        		 &lt;p style='position:abso...
+REQUEST_URI=/Traza/Traza/index.php/site/pdf
+---
+2012/09/20 17:42:23 [error] [exception.HTML2PDF_exception] <span style="color: #AA0000; font-weight: bold;">ERREUR n°4</span><br>Fichier : /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_class/parsingHtml.class.php<br>Ligne : 119<br><br>Code HTML non valide, les balises ne sont pas fermées dans le bon ordre.<br>Etat : <pre>Array
+(
+    [0] => div
+)
+</pre><br><br>HTML : ...forme Analisis Puntos Criticos&lt;/p&gt;&lt;/td&gt;
+        		 &lt;p style='margin: 3...
+REQUEST_URI=/Traza/Traza/index.php/site/pdf
+---
+2012/09/20 17:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "APPC/pdf"' in /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/pdf')
+#1 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/pdf
+---
+2012/09/20 17:51:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "pdf" solicitada.' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(271): CController->missingAction('pdf')
+#1 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('pdf')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/default/pd...')
+#3 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/pdf
+---
+2012/09/20 17:51:25 [error] [exception.CException] exception 'CException' with message 'DefaultController no ha podido encontrar la vista "cover" solicitada.' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(14): CController->renderPartial('cover')
+#1 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/default/in...')
+#7 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+---
+2012/09/20 17:51:43 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Traza/YII/web/CController.php:876) (/Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php:6122)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(15): HTML2PDF->Output()
+#1 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php (6122)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/html2pdf.class.php (374)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php (15)
+2012/09/20 17:52:28 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Traza/YII/web/CController.php:876) (/Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php:6122)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(15): HTML2PDF->Output()
+#1 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php (6122)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/html2pdf.class.php (374)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php (15)
+2012/09/20 17:52:56 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Traza/YII/web/CController.php:876) (/Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php:6122)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(15): HTML2PDF->Output()
+#1 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php (6122)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/html2pdf.class.php (374)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php (15)
+2012/09/20 17:52:57 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Traza/YII/web/CController.php:876) (/Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php:6122)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(15): HTML2PDF->Output()
+#1 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php (6122)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/html2pdf.class.php (374)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php (15)
+2012/09/20 17:52:57 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Traza/YII/web/CController.php:876) (/Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php:6122)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(15): HTML2PDF->Output()
+#1 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_tcpdf_5.0.002/tcpdf.php (6122)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/html2pdf.class.php (374)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php (15)
+2012/09/20 17:54:13 [error] [exception.CException] exception 'CException' with message 'DefaultController no ha podido encontrar la vista "cover" solicitada.' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(14): CController->renderPartial('cover', Array, true)
+#1 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/default/in...')
+#7 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+---

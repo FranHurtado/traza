@@ -34,7 +34,7 @@ class SiteController extends Controller
                 'expression'=>$Admin,
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('login','error'),
+				'actions'=>array('login','error','pdf'),
 				'users'=>array('*'),
 			),
 			array('deny',  // deny all users
@@ -102,4 +102,5 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+	
 }
