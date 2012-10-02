@@ -1186,3 +1186,81 @@ Stack trace:
 #9 {main}
 REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
 ---
+2012/10/01 16:11:28 [error] [exception.HTML2PDF_exception] <span style="color: #AA0000; font-weight: bold;">ERREUR n°5</span><br>Fichier : /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_class/parsingHtml.class.php<br>Ligne : 218<br><br>Code HTML non valide, toutes les balises doivent être fermées.<br>Etat : <pre>Array
+(
+    [0] => html
+)
+</pre>
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+---
+2012/10/01 16:11:45 [error] [exception.HTML2PDF_exception] <span style="color: #AA0000; font-weight: bold;">ERREUR n°5</span><br>Fichier : /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_class/parsingHtml.class.php<br>Ligne : 218<br><br>Code HTML non valide, toutes les balises doivent être fermées.<br>Etat : <pre>Array
+(
+    [0] => html
+)
+</pre>
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+---
+2012/10/01 16:12:37 [error] [exception.HTML2PDF_exception] <span style="color: #AA0000; font-weight: bold;">ERREUR n°3</span><br>Fichier : /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_class/parsingHtml.class.php<br>Ligne : 117<br><br>Code HTML non valide, une balise est fermée en trop : <b>&lt;body&gt;</b><br><br>HTML : .../td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;...
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+---
+2012/10/01 16:12:38 [error] [exception.HTML2PDF_exception] <span style="color: #AA0000; font-weight: bold;">ERREUR n°3</span><br>Fichier : /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/html2pdf/_class/parsingHtml.class.php<br>Ligne : 117<br><br>Code HTML non valide, une balise est fermée en trop : <b>&lt;body&gt;</b><br><br>HTML : .../td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;...
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+---
+2012/10/01 16:34:06 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php:30772) (/Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php:1827)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php(13376): mPDF->purify_utf8()
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(30): mPDF->WriteHTML()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (1827)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (30786)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (13376)
+2012/10/01 16:49:18 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php:30772) (/Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php:1827)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php(13376): mPDF->purify_utf8()
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(34): mPDF->WriteHTML()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (1827)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (30786)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (13376)
+2012/10/01 17:12:25 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php:30772) (/Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php:1827)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php(13376): mPDF->purify_utf8()
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(40): mPDF->WriteHTML()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (1827)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (30786)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (13376)
