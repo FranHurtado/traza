@@ -3,7 +3,7 @@ return array (
   'template' => 'default',
   'connectionId' => 'db',
   'tablePrefix' => '',
-  'modelPath' => 'application.modules.APPC.models',
+  'modelPath' => 'application.modules.Trazabilidad.models',
   'baseClass' => 'CActiveRecord',
   'buildRelations' => '1',
 );
