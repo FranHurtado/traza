@@ -339,7 +339,7 @@ div.search-form
 	behavior: url(PIE.php);
 }
 
-#mainmenu a { color: white; text-decoration: none; font-weight: bold; }
+#mainmenu a { width: 100%; color: white; text-decoration: none; font-weight: bold; }
 
 
 

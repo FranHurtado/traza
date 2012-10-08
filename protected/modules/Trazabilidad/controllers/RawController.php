@@ -1,6 +1,6 @@
 <?php
 
-class ProviderController extends Controller
+class RawController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -62,14 +62,14 @@ class ProviderController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Provider;
+		$model=new Raw;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Provider']))
+		if(isset($_POST['Raw']))
 		{
-			$model->attributes=$_POST['Provider'];
+			$model->attributes=$_POST['Raw'];
 			if($model->save())
 				$this->redirect(array('admin'));
 		}
@@ -91,9 +91,9 @@ class ProviderController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Provider']))
+		if(isset($_POST['Raw']))
 		{
-			$model->attributes=$_POST['Provider'];
+			$model->attributes=$_POST['Raw'];
 			if($model->save())
 				$this->redirect(array('admin'));
 		}
@@ -130,10 +130,10 @@ class ProviderController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Provider('search');
+		$model=new Raw('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Provider']))
-			$model->attributes=$_GET['Provider'];
+		if(isset($_GET['Raw']))
+			$model->attributes=$_GET['Raw'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -147,7 +147,7 @@ class ProviderController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Provider::model()->findByPk($id);
+		$model=Raw::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -159,7 +159,7 @@ class ProviderController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='provider-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='raw-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

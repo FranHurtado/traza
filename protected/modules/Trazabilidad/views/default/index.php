@@ -10,7 +10,8 @@
 	
 	<div id="menu">
 		<div class="button"><p><a href="<?php echo Yii::app()->createURL("Trazabilidad/provider"); ?>">Proveedores</a></p></div>
-		<div class="button"><p><a href="#">Materias Primas</a></p></div>
+		<div class="button"><p><a href="<?php echo Yii::app()->createURL("Trazabilidad/raw"); ?>">Materias Primas</a></p></div>
+		<div class="button"><p style="line-height:30px;"><a href="<?php echo Yii::app()->createURL("Trazabilidad/raw"); ?>">Entrada Mercancias</a></p></div>
 		<div class="button"><p><a href="#">Productos</a></p></div>
 		<div class="button"><p><a href="#">Recetas</a></p></div>
 		<div class="button"><p><a href="<?php echo Yii::app()->createURL("Trazabilidad/worker"); ?>">Operarios</a></p></div>
