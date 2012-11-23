@@ -19,4 +19,4 @@
 
 </div>
 
-<a href="./" class="backButton">Volver</a>
+<a href="<?php echo Yii::app()->createURL("./"); ?>" class="backButton">Volver</a>
