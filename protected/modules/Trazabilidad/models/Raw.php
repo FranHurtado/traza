@@ -67,8 +67,8 @@ class Raw extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'UserID' => 'User',
-			'Name' => 'Name',
+			'UserID' => 'Usuario: ',
+			'Name' => 'Nombre: ',
 		);
 	}
 

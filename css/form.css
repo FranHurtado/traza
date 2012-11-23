@@ -174,3 +174,12 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 	clear: left;
 	padding-left: 110px;
 }
+
+div.form .rawDelete
+{
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	padding-right: 10px;
+}
