@@ -13,5 +13,21 @@
 			<td>Medida correctora</td>
 			<td>Firma responsable</td>
 		</tr>
+		<tr>
+			<td>23/11/2012</td>
+			<td>Suelos</td>
+			<td>Fregado con detergente</td>
+			<td>OK</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>23/11/2012</td>
+			<td>Encimeras</td>
+			<td>Limpiado con bayeta y producto recomendado</td>
+			<td>OK</td>
+			<td></td>
+			<td></td>
+		</tr>
 	</table>
 </div>

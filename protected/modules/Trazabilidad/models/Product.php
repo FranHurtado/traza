@@ -71,13 +71,13 @@ class Product extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'UserID' => 'User',
-			'Name' => 'Name',
-			'Code' => 'Code',
-			'Barcode' => 'Barcode',
-			'Price' => 'Price',
-			'ExpireDate' => 'Expire Date',
-			'MadeDate' => 'Made Date',
+			'UserID' => 'Usuario: ',
+			'Name' => 'Nombre del producto: ',
+			'Code' => 'C&oacute;digo: ',
+			'Barcode' => 'C&oacute;digo de barras: ',
+			'Price' => 'Precio: ',
+			'ExpireDate' => 'Fecha de caducidad: ',
+			'MadeDate' => 'Fecha de fabricaci&oacute;n: ',
 		);
 	}
 

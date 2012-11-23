@@ -16,5 +16,27 @@
 			<td>Medida correctora</td>
 			<td>Firma Responsable</td>
 		</tr>
+		<tr>
+			<td>23/11/2012</td>
+			<td>C&aacute;mara 1</td>
+			<td>OK</td>
+			<td>OK</td>
+			<td>OK</td>
+			<td>OK</td>
+			<td>OK</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>23/11/2012</td>
+			<td>C&aacute;mara 2</td>
+			<td>OK</td>
+			<td>OK</td>
+			<td>OK</td>
+			<td>OK</td>
+			<td>OK</td>
+			<td></td>
+			<td></td>
+		</tr>
 	</table>
 </div>

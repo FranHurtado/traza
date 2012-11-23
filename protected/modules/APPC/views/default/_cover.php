@@ -5,5 +5,5 @@
 	<b>Nombre:</b> Adoraci&oacute;n Sepulveda
 </div>
 <div style='width:100%;text-align:left;font-size:12pt;position:absolute;top:680px;left:30px;'>
- 	<b>Fecha del informe:</b> Del 01/09/2012 al 30/09/2012
+ 	<b>Fecha del informe:</b> Del <?php echo date("d/m/Y"); ?> al <?php echo date("d/m/Y"); ?>
 </div>

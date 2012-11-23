@@ -26,5 +26,31 @@
 			<td>Medida Correctora</td>
 			<td>Firma Responsable</td>
 		</tr>
+		<tr>
+			<td>23/11/2012</td>
+			<td>1</td>
+			<td>NO</td>
+			<td>Todo OK</td>
+			<td>1</td>
+			<td>Cepo</td>
+			<td>SI</td>
+			<td>NO</td>
+			<td>Todo OK</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>23/11/2012</td>
+			<td>2</td>
+			<td>NO</td>
+			<td>Todo OK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
 	</table>
 </div>

@@ -2,61 +2,51 @@
 /* @var $this ProductController */
 /* @var $model Product */
 
-$this->breadcrumbs=array(
-	'Products'=>array('index'),
-	'Manage',
-);
-
 $this->menu=array(
-	array('label'=>'List Product', 'url'=>array('index')),
-	array('label'=>'Create Product', 'url'=>array('create')),
+	array('label'=>'Nuevo Producto', 'url'=>array('create')),
 );
 
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$.fn.yiiGridView.update('product-grid', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
+$this->help = "- Para crear un nuevo producto pulsa el bot&oacute;n \"Nuevo producto\".<br /><br />
+			   - Puede realizar busquedas escribiendo en las cabeceras de los campos."; 
+
 ?>
 
 <h1>Manage Products</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'product-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+	'hideHeader'=>true,
 	'columns'=>array(
-		'ID',
-		'UserID',
 		'Name',
-		'Code',
-		'Barcode',
-		'Price',
-		/*
 		'ExpireDate',
+		/*
 		'MadeDate',
 		*/
-		array(
-			'class'=>'CButtonColumn',
-		),
+		array(	
+	        'class'=>'CButtonColumn',
+	        'template'=>'{update} {delete}',
+	        'buttons' => array(
+	            'update' => array(
+	            	'label' => 'Editar',
+	            	'imageUrl' => false,
+	            ),
+	            'delete' => array(
+	            	'label' => 'Borrar',
+	                'imageUrl' => false,
+	            ),
+	        ),
+	        'deleteConfirmation'=>'Si aceptas eliminaras este registro definitivamente.',
+	     ),
 	),
+	'emptyText' => 'No hay registros.',
+    'summaryText' => 'Mostrando del {start} al {end} de {count} registro(s).',
 )); ?>
+
+<?php
+	$dp = $model->search();
+	if($dp->totalItemCount == 0){ ?> <script>$(".filters").hide();</script> <?php }
+?>
+
+<a href="<?php echo Yii::app()->createURL("Trazabilidad"); ?>" class="backButton">Men&uacute;</a>

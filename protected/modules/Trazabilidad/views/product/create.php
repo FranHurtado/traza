@@ -2,17 +2,13 @@
 /* @var $this ProductController */
 /* @var $model Product */
 
-$this->breadcrumbs=array(
-	'Products'=>array('index'),
-	'Create',
-);
-
 $this->menu=array(
-	array('label'=>'List Product', 'url'=>array('index')),
-	array('label'=>'Manage Product', 'url'=>array('admin')),
+	array('label'=>'Ver Productos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Product</h1>
+<h1>Crear nuevo producto</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+
+<a href="<?php echo Yii::app()->createURL("Trazabilidad"); ?>" class="backButton">Men&uacute;</a>

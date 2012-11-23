@@ -13,5 +13,13 @@
 			<td>Medida Correctora</td>
 			<td>Firma Responsable</td>
 		</tr>
+		<tr>
+			<td>23/11/2012</td>
+			<td>2,3</td>
+			<td>-18,4</td>
+			<td>20</td>
+			<td></td>
+			<td></td>
+		</tr>
 	</table>
 </div>

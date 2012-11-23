@@ -14,5 +14,23 @@
 			<td>Proxima revision</td>
 			<td>Firma Responsable</td>
 		</tr>
+		<tr>
+			<td>23/11/2012</td>
+			<td>Freidora 1</td>
+			<td>5l</td>
+			<td>OK</td>
+			<td>5l</td>
+			<td>24/11/2012</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>23/11/2012</td>
+			<td>Freidora 2</td>
+			<td>2,5l</td>
+			<td>OK</td>
+			<td>2,5l</td>
+			<td>24/11/2012</td>
+			<td></td>
+		</tr>
 	</table>
 </div>

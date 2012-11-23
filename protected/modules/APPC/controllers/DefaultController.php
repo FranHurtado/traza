@@ -43,6 +43,6 @@ class DefaultController extends Controller
  
  
         # Outputs ready PDF
-        $pdf->Output();
+        $pdf->Output('APPC_'.date("d/m/Y").'.pdf','D');
 	}
 }
