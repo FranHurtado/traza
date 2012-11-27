@@ -183,6 +183,8 @@ class RecipeController extends Controller
 				$model = new RecipeRaw;
 				$model->RawID = $_POST['rawID'];
 				$model->RecipeID = $_POST['recipeID'];
+				$model->Quantity = $_POST['quantity'];
+				$model->Type = $_POST['type'];
 				
 				if($model->save()):
 					$modelIngredients=RecipeRaw::model()->findAllByAttributes(array("RecipeID"=>$model->RecipeID));

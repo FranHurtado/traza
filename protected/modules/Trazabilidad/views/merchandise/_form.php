@@ -61,13 +61,13 @@
 	
 	<div style="clear:both;"></div>
 
-	<div class="row">
+	<div class="row" style="float:left;">
 		<?php echo $form->labelEx($model,'Document'); ?>
-		<?php echo $form->textField($model,'Document',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->textField($model,'Document',array('size'=>20,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'Document'); ?>
 	</div>
 	
-	<div class="row">
+	<div class="row" style="float:left;margin-left:50px;">
 		<?php echo $form->labelEx($model,'Expiration'); ?>
 		<?php
             $this->widget('zii.widgets.jui.CJuiDatePicker', array(
@@ -92,6 +92,16 @@
             ));
         ?>
 		<?php echo $form->error($model,'Date'); ?>
+	</div>
+	
+	<div style="clear:both;"></div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'Quantity'); ?>
+		<?php echo $form->textField($model,'Quantity',array('size'=>15,'maxlength'=>50)); ?>
+		<?php echo $form->dropDownList($model,'Type', array("und."=>"und.", "mg."=>"mg.", "gr."=>"gr.", "kg."=>"kg.", "ml."=>"ml.", "cl."=>"cl.", "l."=>"l."), 
+											array('empty'=>'- Und -', 'style' => 'width: 72px;')); ?>
+		<?php echo $form->error($model,'Quantity'); ?>
 	</div>
 
 	<div class="row">

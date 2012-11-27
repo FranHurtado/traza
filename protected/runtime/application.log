@@ -2483,3 +2483,178 @@ REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
 in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (1827)
 in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (30786)
 in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (13376)
+2012/11/23 11:38:32 [error] [exception.CException] exception 'CException' with message 'Propiedad "Product"."RecipeID" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(144): CComponent->__get('RecipeID')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/models/Product.php(106): CActiveRecord->__get('RecipeID')
+#2 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/product/admin.php(18): Product->search()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#7 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/ProductController.php(140): CController->render('admin', Array)
+#8 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/ProductController.php(125): ProductController->actionAdmin()
+#9 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): ProductController->actionIndex()
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#17 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('')
+#19 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/pr...')
+#20 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/product
+---
+2012/11/23 11:44:29 [error] [exception.CException] exception 'CException' with message 'Propiedad "Raw"."ProviderID" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(144): CComponent->__get('ProviderID')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/models/Raw.php(91): CActiveRecord->__get('ProviderID')
+#2 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/raw/admin.php(18): Raw->search()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#7 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RawController.php(140): CController->render('admin', Array)
+#8 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RawController.php(125): RawController->actionAdmin()
+#9 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): RawController->actionIndex()
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#17 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('')
+#19 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/ra...')
+#20 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/raw
+---
+2012/11/27 12:26:08 [error] [exception.CException] exception 'CException' with message 'MerchandiseController no ha podido encontrar la vista "view" solicitada.' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(783): CController->renderPartial('view', Array, true)
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/MerchandiseController.php(56): CController->render('view', Array)
+#2 [internal function]: MerchandiseController->actionView('1')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(MerchandiseController), Array)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(MerchandiseController), Object(ReflectionMethod), Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('view')
+#14 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/me...')
+#15 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/merchandise/view/id/1
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/merchandise/update/id/1
+---
+2012/11/27 12:27:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/MerchandiseController.php:152
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/MerchandiseController.php(89): MerchandiseController->loadModel('admin')
+#1 [internal function]: MerchandiseController->actionUpdate('admin')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(MerchandiseController), Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(MerchandiseController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('update')
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/me...')
+#14 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/merchandise/update/id/admin
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/merchandise/update/id/1
+---
+2012/11/27 12:51:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php:158
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php(89): RecipeController->loadModel('safari-extensio...')
+#1 [internal function]: RecipeController->actionUpdate('safari-extensio...')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(RecipeController), Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(RecipeController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('update')
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/re...')
+#14 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/recipe/update/id/safari-extension://com.slicefactory.firebug-M6DQ5JZ52E/b7586d70/skin/xp/pixel_transparent.gif
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/recipe/update/id/1
+---
+2012/11/27 12:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php:158
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php(89): RecipeController->loadModel('safari-extensio...')
+#1 [internal function]: RecipeController->actionUpdate('safari-extensio...')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(RecipeController), Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(RecipeController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('update')
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/re...')
+#14 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/recipe/update/id/safari-extension://com.slicefactory.firebug-M6DQ5JZ52E/b7586d70/skin/xp/pixel_transparent.gif
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/recipe/update/id/1
+---
+2012/11/27 12:55:17 [error] [exception.CException] exception 'CException' with message 'Propiedad "Raw"."Quantity" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(144): CComponent->__get('Quantity')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/recipe/_form.php(47): CActiveRecord->__get('Quantity')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/recipe/update.php(16): CController->renderPartial('_form', Array)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(783): CController->renderPartial('update', Array, true)
+#10 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php(109): CController->render('update', Array)
+#11 [internal function]: RecipeController->actionUpdate('1')
+#12 /Applications/MAMP/htdocs/Traza/YII/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(RecipeController), Array)
+#13 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(RecipeController), Object(ReflectionMethod), Array)
+#14 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /Applications/MAMP/htdocs/Traza/YII/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /Applications/MAMP/htdocs/Traza/YII/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(292): CFilterChain->run()
+#21 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('update')
+#23 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/re...')
+#24 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/recipe/update/id/1
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/recipe
+---

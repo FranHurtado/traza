@@ -14,3 +14,5 @@ $this->help="- Modifica los campos del formulario que necesites y pulsa guardar.
 
 <?php echo $this->renderPartial('_form', array('model'=>$model,'modelRaws'=>$modelRaws,
 			'modelRecipeRaw'=>$modelRecipeRaw,'modelIngredients'=>$modelIngredients,)); ?>
+			
+<a href="<?php echo Yii::app()->createURL("Trazabilidad"); ?>" class="backButton">Men&uacute;</a>

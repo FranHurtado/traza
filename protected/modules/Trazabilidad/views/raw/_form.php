@@ -20,6 +20,12 @@
 		<?php echo $form->textField($model,'Name',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'Name'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'ProviderID'); ?>
+		<?php echo $form->dropDownList($model,'ProviderID', CHtml::listData(Provider::model()->findAll(), 'ID', 'Name'), array('empty'=>'-- Selecciona el proveedor --','style'=>'width:90%;')); ?>
+		<?php echo $form->error($model,'ProviderID'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Guardar'); ?>

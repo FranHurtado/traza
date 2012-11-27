@@ -39,8 +39,8 @@ class Raw extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('UserID, Name', 'required'),
-			array('UserID', 'numerical', 'integerOnly'=>true),
+			array('UserID, Name, ProviderID', 'required'),
+			array('UserID, ProviderID', 'numerical', 'integerOnly'=>true),
 			array('Name', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -57,6 +57,7 @@ class Raw extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'user' => array(self::BELONGS_TO, 'User', 'UserID'),
+			'provider' => array(self::BELONGS_TO, 'Provider', 'ProviderID'),
 		);
 	}
 
@@ -69,6 +70,7 @@ class Raw extends CActiveRecord
 			'ID' => 'ID',
 			'UserID' => 'Usuario: ',
 			'Name' => 'Nombre: ',
+			'ProviderID' => 'Proovedor: ',
 		);
 	}
 
@@ -86,6 +88,7 @@ class Raw extends CActiveRecord
 		$criteria->compare('ID',$this->ID);
 		$criteria->compare('UserID',$this->UserID);
 		$criteria->compare('Name',$this->Name,true);
+		$criteria->compare('ProviderID',$this->ProviderID);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

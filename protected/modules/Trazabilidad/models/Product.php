@@ -41,8 +41,8 @@ class Product extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('UserID, Name, Code, ExpireDate, MadeDate', 'required'),
-			array('UserID', 'numerical', 'integerOnly'=>true),
+			array('UserID, Name, Code, ExpireDate, MadeDate, RecipeID', 'required'),
+			array('UserID, RecipeID', 'numerical', 'integerOnly'=>true),
 			array('Price', 'numerical'),
 			array('Name', 'length', 'max'=>100),
 			array('Code', 'length', 'max'=>9),
@@ -61,6 +61,8 @@ class Product extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'user' => array(self::BELONGS_TO, 'User', 'UserID'),
+			'recipe' => array(self::BELONGS_TO, 'Recipe', 'RecipeID'),
 		);
 	}
 
@@ -78,6 +80,7 @@ class Product extends CActiveRecord
 			'Price' => 'Precio: ',
 			'ExpireDate' => 'Fecha de caducidad: ',
 			'MadeDate' => 'Fecha de fabricaci&oacute;n: ',
+			'RecipeID' => 'Receta relacionada: ',
 		);
 	}
 
@@ -100,6 +103,7 @@ class Product extends CActiveRecord
 		$criteria->compare('Price',$this->Price);
 		$criteria->compare('ExpireDate',$this->ExpireDate,true);
 		$criteria->compare('MadeDate',$this->MadeDate,true);
+		$criteria->compare('RecipeID',$this->RecipeID);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

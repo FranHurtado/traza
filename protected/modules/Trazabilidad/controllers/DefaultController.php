@@ -25,6 +25,8 @@ class DefaultController extends Controller
         # render (full page)
         $pdf->WriteHTML($this->renderPartial('_cover', array(), true));
         $pdf->Addpage();
+        $pdf->WriteHTML($this->renderPartial('_providers', array(), true));
+        $pdf->Addpage();
         $pdf->WriteHTML($this->renderPartial('_verificationCocina', array(), true));
         $pdf->Addpage();
         $pdf->WriteHTML($this->renderPartial('_verificationCamaras', array(), true));

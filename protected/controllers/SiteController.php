@@ -24,7 +24,7 @@ class SiteController extends Controller
             
         return array(
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index'),
+				'actions'=>array('index','logout'),
 				'users'=>array('@'),
                 'expression'=>$User,
 			),
@@ -34,7 +34,7 @@ class SiteController extends Controller
                 'expression'=>$Admin,
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('login','error','pdf'),
+				'actions'=>array('login','error','pdf','logout'),
 				'users'=>array('*'),
 			),
 			array('deny',  // deny all users

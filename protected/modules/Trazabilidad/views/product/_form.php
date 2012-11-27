@@ -20,6 +20,12 @@
 		<?php echo $form->textField($model,'Name',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'Name'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'RecipeID'); ?>
+		<?php echo $form->dropDownList($model,'RecipeID', CHtml::listData(Recipe::model()->findAll(), 'ID', 'Name'), array('empty'=>'-- Selecciona la receta --','style'=>'width:90%;')); ?>
+		<?php echo $form->error($model,'RecipeID'); ?>
+	</div>
 
 	<div class="row" style="float:left;">
 		<?php echo $form->labelEx($model,'Code'); ?>

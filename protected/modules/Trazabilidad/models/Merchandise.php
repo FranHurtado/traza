@@ -51,7 +51,7 @@ class Merchandise extends CActiveRecord
 		return array(
 			array('UserID, ProviderID, Date', 'required'),
 			array('UserID, ProviderID, RawID', 'numerical', 'integerOnly'=>true),
-			array('Document', 'length', 'max'=>50),
+			array('Quantity, Type, Document', 'length', 'max'=>50),
 			array('State, Temperature, Conditions', 'length', 'max'=>100),
 			array('Expiration, Comments', 'safe'),
 			// The following rule is used by search().
@@ -85,12 +85,14 @@ class Merchandise extends CActiveRecord
 			'ProviderID' => 'Proveedor: ',
 			'Date' => 'Fecha: ',
 			'RawID' => 'Materia prima: ',
-			'Document' => 'Documentacion: ',
+			'Document' => 'Lote / Albaran: ',
 			'State' => 'Estado: ',
 			'Temperature' => 'Temperatura: ',
 			'Conditions' => 'Condiciones: ',
 			'Expiration' => 'Caducidad: ',
 			'Comments' => 'Comentarios: ',
+			'Quantity' => 'Cantidad: ', 
+			'Type' => 'Unidades',
 		);
 	}
 
@@ -116,6 +118,8 @@ class Merchandise extends CActiveRecord
 		$criteria->compare('Conditions',$this->Conditions,true);
 		$criteria->compare('Expiration',$this->Expiration,true);
 		$criteria->compare('Comments',$this->Comments,true);
+		$criteria->compare('Quantity',$this->Quantity,true);
+		$criteria->compare('Type',$this->Type,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

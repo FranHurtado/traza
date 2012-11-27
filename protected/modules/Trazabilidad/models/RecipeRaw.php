@@ -70,6 +70,8 @@ class RecipeRaw extends CActiveRecord
 			'ID' => 'ID',
 			'RecipeID' => 'Receta: ',
 			'RawID' => 'Materia prima: ',
+			'Quantity' => 'Cantidad por unidad: ',
+			'Type' => 'Tipo de unidad: ',
 		);
 	}
 
@@ -87,6 +89,8 @@ class RecipeRaw extends CActiveRecord
 		$criteria->compare('ID',$this->ID);
 		$criteria->compare('RecipeID',$this->RecipeID);
 		$criteria->compare('RawID',$this->RawID);
+		$criteria->compare('Quantity',$this->Quantity);
+		$criteria->compare('Type',$this->Type);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

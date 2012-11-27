@@ -1,6 +1,6 @@
 <label>Ingredientes: </label><br />
 <?php foreach($modelIngredients as $raw): ?>
-	<?php echo "<div style='border: 1px solid #aaa;width:80%;padding:10px;background:#cdcdcd;'><a class='rawDelete' id='". $raw->ID ."'>X</a> " . $raw->raw->Name . "</div><br />"; ?>
+	<?php echo "<div style='border: 1px solid #aaa;width:80%;padding:10px;background:#cdcdcd;'><a class='rawDelete' id='". $raw->ID ."'>X</a> " . $raw->raw->Name . " (" . $raw->Quantity . " " . $raw->Type . ")</div><br />"; ?>
 <?php endforeach; ?>
 
 <script>	

@@ -5,6 +5,9 @@
 $this->menu=array(
 	array('label'=>'Ver Productos', 'url'=>array('admin')),
 );
+
+$this->help="- Modifica los campos del formulario que necesites y pulsa guardar.";
+
 ?>
 
 <h1>Modificar producto: </h1>

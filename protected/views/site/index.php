@@ -17,3 +17,5 @@ $this->pageTitle=Yii::app()->name;
 	</div>
 
 </div>
+
+<a href="<?php echo Yii::app()->createURL("site/logout"); ?>" class="backButton">Cerrar sesi&oacute;n</a>
