@@ -41,8 +41,8 @@ class Product extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('UserID, Name, Code, ExpireDate, MadeDate, RecipeID', 'required'),
-			array('UserID, RecipeID', 'numerical', 'integerOnly'=>true),
+			array('UserID, Name, Code, ExpireDate, RecipeID, Quantity, Frequency', 'required'),
+			array('UserID, RecipeID, Quantity, Frequency, ExpireDate', 'numerical', 'integerOnly'=>true),
 			array('Price', 'numerical'),
 			array('Name', 'length', 'max'=>100),
 			array('Code', 'length', 'max'=>9),
@@ -78,9 +78,11 @@ class Product extends CActiveRecord
 			'Code' => 'C&oacute;digo: ',
 			'Barcode' => 'C&oacute;digo de barras: ',
 			'Price' => 'Precio: ',
-			'ExpireDate' => 'Fecha de caducidad: ',
+			'ExpireDate' => 'Dias para caducidad: ',
 			'MadeDate' => 'Fecha de fabricaci&oacute;n: ',
 			'RecipeID' => 'Receta relacionada: ',
+			'Quantity' => 'Frecuencia de producci&oacute;n: ',
+			'Frecuency' => 'Receta relacionada: ',
 		);
 	}
 
@@ -104,6 +106,8 @@ class Product extends CActiveRecord
 		$criteria->compare('ExpireDate',$this->ExpireDate,true);
 		$criteria->compare('MadeDate',$this->MadeDate,true);
 		$criteria->compare('RecipeID',$this->RecipeID);
+		$criteria->compare('Quantity',$this->Quantity);
+		$criteria->compare('Frequency',$this->Frequency);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

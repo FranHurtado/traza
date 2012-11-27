@@ -23,7 +23,7 @@
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'RecipeID'); ?>
-		<?php echo $form->dropDownList($model,'RecipeID', CHtml::listData(Recipe::model()->findAll(), 'ID', 'Name'), array('empty'=>'-- Selecciona la receta --','style'=>'width:90%;')); ?>
+		<?php echo $form->dropDownList($model,'RecipeID', CHtml::listData(Recipe::model()->findAll(), 'ID', 'Name'), array('empty'=>'-- Selecciona la receta --','style'=>'width:62%;')); ?>
 		<?php echo $form->error($model,'RecipeID'); ?>
 	</div>
 
@@ -39,67 +39,28 @@
 		<?php echo $form->error($model,'Barcode'); ?>
 	</div>
 	
+	<div class="row" style="float:left;margin-left:50px;">
+		<?php echo $form->labelEx($model,'ExpireDate'); ?>
+		<?php echo $form->textField($model,'ExpireDate',array('size'=>9,'maxlength'=>3)); ?>
+		<?php echo $form->error($model,'ExpireDate'); ?>
+	</div>
+	
 	<div style="clear:both"></div>
+	
+	<div class="row" style="float:left;">
+		<?php echo $form->labelEx($model,'Quantity'); ?>
+		<?php echo $form->textField($model,'Quantity',array('size'=>9,'maxlength'=>5)); ?>
+		<?php echo $form->dropDownList($model,'Frequency', array(1=>"dia", 2=>"semana", 3=>"mes"), 
+											array('empty'=>'- Frecuencia -', 'style' => 'width: 108px;')); ?>
+		<?php echo $form->error($model,'Quantity'); ?>
+	</div>
 
-	<div class="row">
+	<div class="row" style="float:left;margin-left:50px;">
 		<?php echo $form->labelEx($model,'Price'); ?>
 		<?php echo $form->textField($model,'Price',array('size'=>9,'maxlength'=>14)); ?>
 		<?php echo $form->error($model,'Price'); ?>
 	</div>
 
-	<div class="row" style="float:left;">
-		<?php echo $form->labelEx($model,'ExpireDate'); ?>
-		<?php
-            $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-              'model'=>$model,
-              'attribute'=>'ExpireDate',
-              'value'=>$model->ExpireDate,
-              // additional javascript options for the date picker plugin
-              'options'=>array(
-                'changeYear'=>true,
-                'yearRange'=>'1930',
-                'language'=>'es',
-                'dateFormat'=>'yy-mm-dd',
-                'monthNames' => array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"),
-                'monthNamesShort' => array("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"),
-                'dayNames' => array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"),
-                'dayNamesMin' => array('Do','Lu','Ma','Mi','Ju','Vi','Sa'),
-                'defaultDate'=>$model->ExpireDate,
-              ),
-              'htmlOptions'=>array(
-                'placeholder'=>date("Y-m-d"),
-              ),
-            ));
-        ?>
-		<?php echo $form->error($model,'ExpireDate'); ?>
-	</div>
-
-	<div class="row"  style="float:left;margin-left:50px;">
-		<?php echo $form->labelEx($model,'MadeDate'); ?>
-		<?php
-            $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-              'model'=>$model,
-              'attribute'=>'MadeDate',
-              'value'=>$model->MadeDate,
-              // additional javascript options for the date picker plugin
-              'options'=>array(
-                'changeYear'=>true,
-                'yearRange'=>'1930',
-                'language'=>'es',
-                'dateFormat'=>'yy-mm-dd',
-                'monthNames' => array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"),
-                'monthNamesShort' => array("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"),
-                'dayNames' => array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"),
-                'dayNamesMin' => array('Do','Lu','Ma','Mi','Ju','Vi','Sa'),
-                'defaultDate'=>$model->MadeDate,
-              ),
-              'htmlOptions'=>array(
-                'placeholder'=>date("Y-m-d"),
-              ),
-            ));
-        ?>
-		<?php echo $form->error($model,'MadeDate'); ?>
-	</div>
 	
 	<div style="clear:both"></div>
 
