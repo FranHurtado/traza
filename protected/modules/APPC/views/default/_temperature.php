@@ -1,3 +1,8 @@
+<?php
+	$dias= (strtotime($_POST["start"])-strtotime($_POST["fin"]))/86400;
+	$dias = abs($dias); $dias = floor($dias);
+?>
+
 <div style='width:100%;'>
 	<table width="100%" cellpadding="10">
 		<tr>
@@ -13,13 +18,18 @@
 			<td>Medida Correctora</td>
 			<td>Firma Responsable</td>
 		</tr>
+		<?php for($i=0;$i<$dias;$i++): ?>
+		<?php
+			$newFecha = strtotime($_POST["start"]) + ($i * 86400);	
+		?>
 		<tr>
-			<td>23/11/2012</td>
-			<td>2,3</td>
-			<td>-18,4</td>
-			<td>20</td>
+			<td><?php echo date("d-m-Y", $newFecha); ?></td>
+			<td><?php echo (rand(21, 42) / 10); ?></td>
+			<td><?php echo (rand(-205, -187) / 10); ?></td>
+			<td><?php echo rand(25, 21); ?></td>
 			<td></td>
 			<td></td>
 		</tr>
+		<?php endfor; ?>
 	</table>
 </div>

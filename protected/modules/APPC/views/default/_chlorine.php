@@ -1,3 +1,10 @@
+<?php
+	$dias= (strtotime($_POST["start"])-strtotime($_POST["fin"]))/86400;
+	$dias = abs($dias); $dias = floor($dias);
+	
+	$randomHour = "0" . rand(8,11) . ":" . rand(10,58);
+?>
+
 <div style='width:100%;'>
 	<table width="100%" cellpadding="10">
 		<tr>
@@ -13,29 +20,34 @@
 			<td>Medida correctora</td>
 			<td>Firma Responsable</td>
 		</tr>
-		<tr>
-			<td>23/11/2012 09:35</td>
-			<td>Grifo cocina</td>
-			<td>OK</td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>23/11/2012 09:35</td>
-			<td>Grifo barra</td>
-			<td>OK</td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>23/11/2012 09:35</td>
-			<td>Grifo lavabos</td>
-			<td>OK</td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
+		<?php for($i=1;$i<=$dias;$i++): ?>
+		<?php
+			$newFecha = strtotime($_POST["start"]) + ($i * 86400);	
+		?>
+			<tr>
+				<td><?php echo date("d-m-Y", $newFecha) . " " . $randomHour; ?></td>
+				<td>Grifo cocina</td>
+				<td><?php echo (rand(23, 42) / 100); ?></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><?php echo date("d-m-Y", $newFecha) . " " . $randomHour; ?></td>
+				<td>Grifo barra</td>
+				<td><?php echo (rand(23, 42) / 100); ?></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><?php echo date("d-m-Y", $newFecha) . " " . $randomHour; ?></td>
+				<td>Grifo lavabos</td>
+				<td><?php echo (rand(26, 31) / 100); ?></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		<?php endfor; ?>
 	</table>
 </div>

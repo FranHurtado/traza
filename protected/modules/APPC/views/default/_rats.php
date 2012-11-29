@@ -1,3 +1,8 @@
+<?php
+	$dias= (strtotime($_POST["start"])-strtotime($_POST["fin"]))/86400;
+	$dias = abs($dias); $dias = floor($dias);
+?>
+
 <div style='width:100%;'>
 	<table width="100%" cellpadding="10">
 		<tr>
@@ -26,31 +31,41 @@
 			<td>Medida Correctora</td>
 			<td>Firma Responsable</td>
 		</tr>
-		<tr>
-			<td>23/11/2012</td>
-			<td>1</td>
-			<td>NO</td>
-			<td>Todo OK</td>
-			<td>1</td>
-			<td>Cepo</td>
-			<td>SI</td>
-			<td>NO</td>
-			<td>Todo OK</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>23/11/2012</td>
-			<td>2</td>
-			<td>NO</td>
-			<td>Todo OK</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
+		<?php for($i=0;$i<$dias;$i++): ?>
+		<?php
+			$newFecha = strtotime($_POST["start"]) + ($i * 86400);	
+		?>
+			<?php for($j=1;$j<=User::model()->findByPK(Yii::app()->user->ID)->cebos;$j++): ?>
+			<tr>
+				<td><?php echo date("d-m-Y", $newFecha); ?></td>
+				<td><?php echo $j; ?></td>
+				<td>NO</td>
+				<td>Todo OK</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<?php endfor; ?>
+			
+			<?php for($k=1;$k<=User::model()->findByPK(Yii::app()->user->ID)->cebos;$k++): ?>
+			<tr>
+				<td><?php echo date("d-m-Y", $newFecha); ?></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><?php echo $k; ?></td>
+				<td>Cepo</td>
+				<td>SI</td>
+				<td>NO</td>
+				<td>Todo OK</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<?php endfor; ?>
+		<?php endfor; ?>
 	</table>
 </div>

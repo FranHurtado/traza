@@ -2,7 +2,7 @@
 	<table width="100%" cellpadding="10" style="font-size:9pt;">
 		<tr>
 			<td colspan="7" style="font-size:14pt;font-weight:bold;padding:20px;text-align:center;">
-				CONTROL PERIODICO DE C&Acute;MARAS Y/O ALMACENES<br />
+				CONTROL PERIODICO DE C&Aacute;MARAS Y/O ALMACENES<br />
 				Fecha: <?php echo date("d/m/Y"); ?>
 			</td>
 		</tr>

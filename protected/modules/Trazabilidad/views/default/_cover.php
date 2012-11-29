@@ -5,5 +5,5 @@
 	<b>Nombre:</b> Adoraci&oacute;n Sepulveda
 </div>
 <div style='width:100%;text-align:left;font-size:12pt;position:absolute;top:680px;left:30px;'>
- 	<b>Fecha del informe:</b> <?php echo date("d/m/Y"); ?>
+ 	<b>Fecha del informe:</b> Del <?php echo date("d-m-Y", strtotime($_POST["start"])); ?> al <?php echo date("d-m-Y", strtotime($_POST["fin"])); ?>
 </div>

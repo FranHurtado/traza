@@ -2658,3 +2658,178 @@ Stack trace:
 REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/recipe/update/id/1
 HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/recipe
 ---
+2012/11/27 16:39:04 [error] [exception.CDbException] exception 'CDbException' with message 'Tabla "Recipe" no contiene la columna "UserID".' in /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php:570
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(1475): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(16): CActiveRecord->findAllByAttributes(Array)
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(32): CController->renderPartial('_recipes', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#12 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad
+---
+2012/11/28 16:19:45 [error] [exception.CException] exception 'CException' with message 'CJuiDatePicker debe especificar valor/es para "model" y "atributte" o para "name".' in /Applications/MAMP/htdocs/Traza/YII/zii/widgets/jui/CJuiInputWidget.php:54
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/zii/widgets/jui/CJuiDatePicker.php(75): CJuiInputWidget->resolveNameID()
+#1 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(174): CJuiDatePicker->run()
+#2 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/views/default/selector.php(22): CBaseController->widget('zii.widgets.jui...', Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', NULL, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(783): CController->renderPartial('selector', NULL, true)
+#7 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(49): CController->render('selector')
+#8 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/default/in...')
+#14 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/APPC/default/index
+---
+2012/11/28 16:23:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "safari-extension:" solicitada.' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(271): CController->missingAction('safari-extensio...')
+#1 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('safari-extensio...')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/default/sa...')
+#3 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/safari-extension://com.slicefactory.firebug-M6DQ5JZ52E/de66d62d/skin/xp/pixel_transparent.gif
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/APPC/default/informe
+---
+2012/11/28 16:23:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "blank.gif" solicitada.' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(271): CController->missingAction('blank.gif')
+#1 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('blank.gif')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/default/bl...')
+#3 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/blank.gif
+---
+2012/11/28 16:24:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "safari-extension:" solicitada.' in /Applications/MAMP/htdocs/Traza/YII/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(271): CController->missingAction('safari-extensio...')
+#1 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('safari-extensio...')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('APPC/default/sa...')
+#3 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/safari-extension://com.slicefactory.firebug-M6DQ5JZ52E/de66d62d/skin/xp/pixel_transparent.gif
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/APPC/default/informe
+---
+2012/11/28 16:25:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "default/informe"' in /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('default/informe')
+#1 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Traza/Traza/index.php/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/APPC/default/informe
+---
+2012/11/28 16:54:55 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php:30772) (/Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php:1827)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php(13376): mPDF->purify_utf8()
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/APPC/controllers/DefaultController.php(35): mPDF->WriteHTML()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/APPC/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (1827)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (30786)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/vendors/mpdf/mpdf.php (13376)
+2012/11/29 10:15:49 [warning] [application] Failed to set unsafe attribute "UserID" of "Recipe".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php (99)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:15:57 [warning] [application] Failed to set unsafe attribute "UserID" of "Recipe".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php (72)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:16:22 [warning] [application] Failed to set unsafe attribute "UserID" of "Recipe".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php (99)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:16:50 [warning] [application] Failed to set unsafe attribute "UserID" of "Recipe".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php (99)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:17:31 [warning] [application] Failed to set unsafe attribute "UserID" of "Recipe".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php (72)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:17:58 [warning] [application] Failed to set unsafe attribute "UserID" of "Recipe".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php (99)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:18:24 [warning] [application] Failed to set unsafe attribute "Price" of "Product".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/ProductController.php (96)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:18:29 [warning] [application] Failed to set unsafe attribute "Price" of "Product".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/ProductController.php (96)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:19:01 [warning] [application] Failed to set unsafe attribute "Price" of "Product".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/ProductController.php (72)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:19:39 [warning] [application] Failed to set unsafe attribute "Price" of "Product".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/ProductController.php (72)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:20:16 [warning] [application] Failed to set unsafe attribute "UserID" of "Recipe".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php (99)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:20:38 [error] [exception.CDbException] exception 'CDbException' with message 'Tabla "RecipeRaw" no contiene la columna "UserID".' in /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php:570
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(1475): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_production.php(43): CActiveRecord->findAllByAttributes(Array)
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(35): CController->renderPartial('_production', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#12 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 10:22:54 [warning] [application] Failed to set unsafe attribute "Price" of "Product".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/ProductController.php (96)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 10:23:03 [error] [exception.CDbException] exception 'CDbException' with message 'Tabla "RecipeRaw" no contiene la columna "UserID".' in /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php:570
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(1475): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_production.php(70): CActiveRecord->findAllByAttributes(Array)
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(35): CController->renderPartial('_production', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#12 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---

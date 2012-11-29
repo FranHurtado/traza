@@ -81,6 +81,7 @@ class Recipe extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ID',$this->ID);
+		$criteria->compare('UserID',$this->UserID);
 		$criteria->compare('Name',$this->Name,true);
 
 		return new CActiveDataProvider($this, array(

@@ -43,7 +43,6 @@ class Product extends CActiveRecord
 		return array(
 			array('UserID, Name, Code, ExpireDate, RecipeID, Quantity, Frequency', 'required'),
 			array('UserID, RecipeID, Quantity, Frequency, ExpireDate', 'numerical', 'integerOnly'=>true),
-			array('Price', 'numerical'),
 			array('Name', 'length', 'max'=>100),
 			array('Code', 'length', 'max'=>9),
 			array('Barcode', 'length', 'max'=>14),

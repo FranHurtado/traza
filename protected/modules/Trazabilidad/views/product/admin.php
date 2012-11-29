@@ -20,7 +20,6 @@ $this->help = "- Para crear un nuevo producto pulsa el bot&oacute;n \"Nuevo prod
 	'hideHeader'=>true,
 	'columns'=>array(
 		'Name',
-		'ExpireDate',
 		/*
 		'MadeDate',
 		*/
