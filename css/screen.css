@@ -253,11 +253,11 @@ input[type=submit]
 	position: absolute;
 	right: 20px;
 	top: 8px;
-	font-size: 80%;
+	font-size: 95%;
 	font-weight: bold;
-	color: #333;
+	color: #fff;
 	text-decoration: none;
-	background: #dedede;
+	background: #4185C2;
 	border: 2px solid #666;
 	padding: 8px 15px;
 	-moz-border-radius: 7px; /* Firefox */
@@ -266,4 +266,40 @@ input[type=submit]
   	-moz-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6);
 	-webkit-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6);
 	box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6); 
+}
+
+.backButton:hover
+{
+	color: #bbb;
+	-moz-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .8);
+	-webkit-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .8);
+	box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .8); 
+}
+
+.backButtonA
+{
+	position: absolute;
+	right: 20px;
+	top: 8px;
+	font-size: 95%;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	background: #31BC90;
+	border: 2px solid #666;
+	padding: 8px 15px;
+	-moz-border-radius: 7px; /* Firefox */
+	-webkit-border-radius: 7px; /* Safari, Chrome */
+  	border-radius: 7px; /* CSS3 */
+  	-moz-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6);
+	-webkit-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6);
+	box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .6); 
+}
+
+.backButtonA:hover
+{
+	color: #bbb;
+	-moz-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .8);
+	-webkit-box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .8);
+	box-shadow: inset 0px 0px 3px 2px rgba(30, 30, 30, .8); 
 }

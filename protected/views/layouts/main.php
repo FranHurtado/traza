@@ -36,5 +36,21 @@
 
 </div><!-- page -->
 
+<script>
+	// Activar toda la superficie del boton y no solo
+	// las letras.
+	$(document).ready(function(){
+		$(".button").click(function(){
+			var url = $(this).find("p").find("a").attr("href");
+			window.location.href = url;
+		});
+		
+		$(".buttonA").click(function(){
+			var url = $(this).find("p").find("a").attr("href");
+			window.location.href = url;
+		});
+	})
+</script>
+
 </body>
 </html>

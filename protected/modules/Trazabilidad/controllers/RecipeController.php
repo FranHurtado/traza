@@ -70,6 +70,7 @@ class RecipeController extends Controller
 		if(isset($_POST['Recipe']))
 		{
 			$model->attributes=$_POST['Recipe'];
+			$model->UserID = $_POST['Recipe']['UserID'];
 			if($model->save())
 				$this->redirect(array('update','id'=>$model->ID));
 		}
@@ -136,8 +137,8 @@ class RecipeController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Recipe('search');
-		$model->unsetAttributes();  // clear any default values
+		$model=new Recipe("search");
+		//$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Recipe']))
 			$model->attributes=$_GET['Recipe'];
 

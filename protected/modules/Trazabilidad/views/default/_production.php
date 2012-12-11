@@ -42,7 +42,7 @@
 								$ingredients = "";
 								$modelIngredients = RecipeRaw::model()->findAllByAttributes(array("RecipeID" => $Product->recipe->ID));
 								foreach($modelIngredients as $Ingredient):
-									$ingredients.= "- " . $Ingredient->raw->Name . " (" . $Ingredient->Quantity . " " . $Ingredient->Type . ") <br /> ";
+									$ingredients.= "- " . $Ingredient->raw->Name . " (" . ($Ingredient->Quantity * $Product->Quantity) . " " . $Ingredient->Type . ") <br /> ";
 								endforeach;
 								
 								$newFecha = strtotime($_POST["start"]) + ($i * 86400);
@@ -69,7 +69,7 @@
 								$ingredients = "";
 								$modelIngredients = RecipeRaw::model()->findAllByAttributes(array("RecipeID" => $Product->recipe->ID));
 								foreach($modelIngredients as $Ingredient):
-									$ingredients.= "- " . $Ingredient->raw->Name . " (" . $Ingredient->Quantity . " " . $Ingredient->Type . ") <br /> ";
+									$ingredients.= "- " . $Ingredient->raw->Name . " (" . ($Ingredient->Quantity * $Product->Quantity) . " " . $Ingredient->Type . ") <br /> ";
 								endforeach;
 								
 								$newFecha = strtotime($_POST["start"]) + ($i * 604800);
@@ -97,7 +97,7 @@
 								$ingredients = "";
 								$modelIngredients = RecipeRaw::model()->findAllByAttributes(array("RecipeID" => $Product->recipe->ID));
 								foreach($modelIngredients as $Ingredient):
-									$ingredients.= "- " . $Ingredient->raw->Name . " (" . $Ingredient->Quantity . " " . $Ingredient->Type . ") <br /> ";
+									$ingredients.= "- " . $Ingredient->raw->Name . " (" . ($Ingredient->Quantity * $Product->Quantity) . " " . $Ingredient->Type . ") <br /> ";
 								endforeach;
 								
 								$newFecha = strtotime($_POST["start"]) + ($i * 2592000);

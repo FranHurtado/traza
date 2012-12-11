@@ -4,16 +4,16 @@
 <?php endforeach; ?>
 
 <script>	
-	$(".rawDelete").click(function(){
+	jQuery(".rawDelete").click(function(){
 		if(confirm("Haz click en Aceptar para eliminar este ingrediente."))
 		{
 			var request = $.ajax({
 				url: "<?php echo $this->createURL("recipe/DeleteRaw"); ?>",
 		  		type: "POST",
-					data: {
-							ID : $(this).attr("id"), 
-					},
-					dataType: "html"
+				data: {
+					ID : $(this).attr("id")
+				},
+				dataType: "html"
 			});
 	
 			request.done(function(msg) {

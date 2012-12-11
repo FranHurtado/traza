@@ -61,18 +61,18 @@
 </div><!-- form -->
 
 
-<script>
-	$("#addRecipeRaw").click(function(){
+<script type="text/javascript">
+	jQuery("#addRecipeRaw").click(function(){
 		var request = $.ajax({
 			url: "<?php echo $this->createURL("recipe/AddRaw"); ?>",
 	  		type: "POST",
-				data: {
-						rawID : $("#RecipeRaw_RawID").val(), 
-						recipeID : '<?php echo $model->ID; ?>',
-						quantity : $("#RecipeRaw_Quantity").val(),
-						type :  $("#RecipeRaw_Type").val(),
-				},
-				dataType: "html"
+			data: {
+				rawID : $("#RecipeRaw_RawID").val(), 
+				recipeID : '<?php echo $model->ID; ?>',
+				quantity : $("#RecipeRaw_Quantity").val(),
+				type :  $("#RecipeRaw_Type").val()
+			},
+			dataType: "html"
 		});
 
 		request.done(function(msg) {
@@ -85,16 +85,16 @@
 		});
 	});
 	
-	$(".rawDelete").click(function(){
+	jQuery(".rawDelete").click(function(){
 		if(confirm("Haz click en Aceptar para eliminar este ingrediente."))
 		{
 			var request = $.ajax({
 				url: "<?php echo $this->createURL("recipe/DeleteRaw"); ?>",
 		  		type: "POST",
-					data: {
-							ID : $(this).attr("id"), 
-					},
-					dataType: "html"
+				data: {
+						ID : $(this).attr("id") 
+				},
+				dataType: "html"
 			});
 	
 			request.done(function(msg) {

@@ -49,4 +49,4 @@ $this->help = "- Para crear un nuevo control pulsa el bot&oacute;n \"Nuevo Contr
 	if($dp->totalItemCount == 0){ ?> <script>$(".filters").hide();</script> <?php }
 ?>
 
-<a href="<?php echo Yii::app()->createURL("APPC"); ?>" class="backButton">Men&uacute;</a>
+<a href="<?php echo Yii::app()->createURL("APPC"); ?>" class="backButtonA">Men&uacute;</a>

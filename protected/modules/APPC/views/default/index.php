@@ -14,10 +14,10 @@
 		<div class="buttonA"><p><a href="<?php echo Yii::app()->createURL("APPC/point"); ?>">Puntos Cr&iacute;ticos</a></p></div>
 		<div class="buttonA"><p><a href="<?php echo Yii::app()->createURL("APPC/control"); ?>">Controles</a></p></div>
 		<div class="buttonA"><p><a href="<?php echo Yii::app()->createURL("APPC/default/informe"); ?>">Informes</a></p></div>
-		<div class="buttonA"><p><a href="<?php echo Yii::app()->createURL("user/update", array("id"=>Yii::app()->user->ID)); ?>">Datos Empresa</a></p></div>
+		<div class="buttonA"><p><a href="<?php echo Yii::app()->createURL("/user/update", array("id"=>Yii::app()->user->ID)); ?>">Datos Empresa</a></p></div>
 		<div class="clear"></div>
 	</div>
 
 </div>
 
-<a href="<?php echo Yii::app()->createURL("./"); ?>" class="backButton">Volver</a>
+<a href="<?php echo Yii::app()->createURL("./"); ?>" class="backButtonA">Volver</a>

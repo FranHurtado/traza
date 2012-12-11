@@ -130,8 +130,8 @@ class ProviderController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Provider('search');
-		$model->unsetAttributes();  // clear any default values
+		$model=new Provider("search");
+		//$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Provider']))
 			$model->attributes=$_GET['Provider'];
 

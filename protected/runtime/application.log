@@ -2833,3 +2833,234 @@ Stack trace:
 REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
 HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
 ---
+2012/11/29 11:36:32 [error] [exception.CException] exception 'CException' with message 'Propiedad "CDbCriteria".":t1" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCriteria.php(161): CComponent->__set(':t1', '21')
+#1 /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(1475): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'UserId:t1 OR Us...', Array, Array, '`t`.')
+#4 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(16): CActiveRecord->findAllByAttributes('UserId:t1 OR Us...', Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#8 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): CController->renderPartial('_recipes', Array, true)
+#9 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#14 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#15 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 11:37:08 [error] [exception.CException] exception 'CException' with message 'Propiedad "CDbCriteria".":t1" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCriteria.php(161): CComponent->__set(':t1', '21')
+#1 /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(1475): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'UserId=:t1 OR U...', Array, Array, '`t`.')
+#4 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(16): CActiveRecord->findAllByAttributes('UserId=:t1 OR U...', Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#8 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): CController->renderPartial('_recipes', Array, true)
+#9 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#14 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#15 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 11:38:20 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php:546)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require()
+#1 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): DefaultController->renderInternal()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): DefaultController->renderFile()
+#3 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): DefaultController->renderPartial()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php (16)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php (33)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 11:38:43 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php:546)
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require()
+#1 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): DefaultController->renderInternal()
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): DefaultController->renderFile()
+#3 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): DefaultController->renderPartial()
+#4 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): DefaultController->runAction()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): DefaultController->run()
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CWebApplication->run()
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php (16)
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php (33)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 11:39:09 [error] [exception.CException] exception 'CException' with message 'Propiedad "CDbCriteria".":t1" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCriteria.php(161): CComponent->__set(':t1', '21')
+#1 /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 /Applications/MAMP/htdocs/Traza/YII/db/schema/CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(1475): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'UserID=:t1 OR U...', Array, Array, '`t`.')
+#4 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(16): CActiveRecord->findAllByAttributes('UserID=:t1 OR U...', Array)
+#5 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#8 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): CController->renderPartial('_recipes', Array, true)
+#9 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#14 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#15 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 11:41:34 [error] [exception.CException] exception 'CException' with message 'Propiedad "RecipeRaw"."Name" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(144): CComponent->__get('Name')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(21): CActiveRecord->__get('Name')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): CController->renderPartial('_recipes', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#12 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 11:42:57 [error] [exception.CException] exception 'CException' with message 'Propiedad "RecipeRaw"."Name" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(144): CComponent->__get('Name')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(22): CActiveRecord->__get('Name')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): CController->renderPartial('_recipes', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#12 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 11:43:08 [error] [exception.CException] exception 'CException' with message 'Propiedad "RecipeRaw"."Name" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(144): CComponent->__get('Name')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(22): CActiveRecord->__get('Name')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): CController->renderPartial('_recipes', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#12 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 11:45:41 [error] [exception.CException] exception 'CException' with message 'Propiedad "RecipeRaw"."Name" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(144): CComponent->__get('Name')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(42): CActiveRecord->__get('Name')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): CController->renderPartial('_recipes', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#12 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 11:46:02 [error] [exception.CException] exception 'CException' with message 'Propiedad "RecipeRaw"."Name" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(144): CComponent->__get('Name')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(42): CActiveRecord->__get('Name')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): CController->renderPartial('_recipes', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#12 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 11:47:29 [error] [exception.CException] exception 'CException' with message 'Propiedad "RecipeRaw"."Name" no se encuentra definida.' in /Applications/MAMP/htdocs/Traza/YII/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/Traza/YII/db/ar/CActiveRecord.php(144): CComponent->__get('Name')
+#1 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/views/default/_recipes.php(21): CActiveRecord->__get('Name')
+#2 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/Traza/YII/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/DefaultController.php(33): CController->renderPartial('_recipes', Array, true)
+#6 /Applications/MAMP/htdocs/Traza/YII/web/actions/CInlineAction.php(50): DefaultController->actionInforme()
+#7 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/Traza/YII/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(283): CController->run('informe')
+#11 /Applications/MAMP/htdocs/Traza/YII/web/CWebApplication.php(142): CWebApplication->runController('Trazabilidad/de...')
+#12 /Applications/MAMP/htdocs/Traza/YII/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/Traza/Traza/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Traza/Traza/index.php/Trazabilidad/default/informe
+HTTP_REFERER=http://localhost:8888/Traza/Traza/index.php/Trazabilidad/default/informe
+---
+2012/11/29 11:49:25 [warning] [application] Failed to set unsafe attribute "UserID" of "Recipe".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php (72)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)
+2012/11/29 11:50:47 [warning] [application] Failed to set unsafe attribute "UserID" of "Recipe".
+in /Applications/MAMP/htdocs/Traza/Traza/protected/modules/Trazabilidad/controllers/RecipeController.php (72)
+in /Applications/MAMP/htdocs/Traza/Traza/index.php (13)

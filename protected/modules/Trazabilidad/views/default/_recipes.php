@@ -13,19 +13,19 @@
 		</tr>
 		
 		<?php 
-			$modelRecipe = Recipe::model()->findAllByAttributes(array("UserID" => Yii::app()->user->ID));
-			foreach($modelRecipe as $Recipe):
+			$modelRecipes = Recipe::model()->findAll("UserID = 21 OR UserID = " . Yii::app()->user->ID . "");
+			foreach($modelRecipes as $Recipe):
 				$modelRecipeRaws = RecipeRaw::model()->findAllByAttributes(array("RecipeID" => $Recipe->ID));
 				$finalRecipeRaws = "";
 				foreach($modelRecipeRaws as $RecipeRaw):
-					$finalRecipeRaws.=$RecipeRaw->Name . "(". $RecipeRaw->Quantity ." " . $RecipeRaw->Type . ")<br /> ";
+					$finalRecipeRaws.=$RecipeRaw->recipe->Name . "(". $RecipeRaw->Quantity ." " . $RecipeRaw->Type . ")<br /> ";
 				endforeach;
 		?>
 				<tr>
-					<td><?php echo $Recipe->Name; ?></td>
-					<td><?php echo $finalRecipeRaws; ?></td>
-					<td>- Lavado de ingredientes<br />- Mezclado de ingredientes<br />- Conservacion en condiciones optimas<br />- Emplatado<br />- Servicio<br /></td>
-					<td></td>
+					<td style="border: 1px solid #555;"><?php echo $Recipe->Name; ?></td>
+					<td style="border: 1px solid #555;"><?php echo $finalRecipeRaws; ?></td>
+					<td style="border: 1px solid #555;">- Lavado de ingredientes<br />- Mezclado de ingredientes<br />- Conservacion en condiciones optimas<br />- Emplatado<br />- Servicio<br /></td>
+					<td style="border: 1px solid #555;"></td>
 				</tr>
 		<?php
 			endforeach;
@@ -36,7 +36,7 @@
 		</tr>
 
 		<tr>
-			<td colspan="2" style="border: 1px solid #555;"></td>
+			<td colspan="2"></td>
 			<td colspan="2" style="border: 1px solid #555;" valign="top">Firma del responsable: </td>
 		</tr>
 		

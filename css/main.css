@@ -189,9 +189,9 @@ div.search-form
 	list-style-image:none;
 	list-style-position:outside;
 	list-style-type:none;
-	background: #dedede;
+	background: #4185C2;
 	color: #333;
-	border: 1px solid #666;
+	border: 2px solid #222;
 	margin: 0;
 	padding: 0;
 }
@@ -203,23 +203,24 @@ div.search-form
 
 .portlet-content h1
 {
-	max-width: 40px;
-	font-size: 110%;
+	max-width: 80px;
+	background: url("../images/help.png") no-repeat;
+	font-size: 170%;
 	font-weight: bold;
-	margin: 10px 0 5px 2px;
+	margin: 10px 0 10px 2px;
 	color: white;
 	background-color: #7D7C7C;
 	text-align: center;
-	padding: 0 5px;
+	padding: 5px 5px 5px 35px;
 	z-index: 2;
 }
 
 .portlet-content p
 {
-	font-size: 90%;
+	font-size: 120%;
 	text-align: left;
 	margin: 0;
-	color: #cdcdcd;
+	color: #eee;
 	border: 1px solid #ababab;
 	padding: 5px 8px 5px 8px;
 	z-index: 1;
@@ -240,7 +241,7 @@ div.search-form
 .operations li a
 {
 	font: bold 11pt Arial;
-	color: #666!important;
+	color: #fff!important;
 	display: block;
 	padding: 2px 0 2px 8px;
 	line-height: 15px;
@@ -437,4 +438,10 @@ div.search-form
 
 .ui-datepicker {
     width: 19em!important;
+}
+
+.grid-view .pager {
+    background: white!important;
+    border: 1px solid #DEDEDE!important;
+    padding: 15px 10px!important;
 }

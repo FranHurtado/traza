@@ -8,7 +8,7 @@
 		<tr>
 			<td style="border: 1px solid #555;"><b>Proveedor</b></td>
 			<td style="border: 1px solid #555;"><b>Direccion</b></td>
-			<td style="border: 1px solid #555;"><b>Telefono</b>>/td>
+			<td style="border: 1px solid #555;"><b>Telefono</b></td>
 			<td style="border: 1px solid #555;"><b>Persona contacto</b></td>
 			<td style="border: 1px solid #555;"><b>NRGSEAA</b></td>
 			<td style="border: 1px solid #555;"><b>Materia primas</b></td>

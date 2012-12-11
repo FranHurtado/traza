@@ -16,7 +16,7 @@
 		<div class="button"><p><a href="<?php echo Yii::app()->createURL("Trazabilidad/recipe"); ?>">Recetas</a></p></div>
 		<div class="button"><p><a href="<?php echo Yii::app()->createURL("Trazabilidad/worker"); ?>">Operarios</a></p></div>
 		<div class="button"><p><a href="<?php echo Yii::app()->createURL("Trazabilidad/default/informe"); ?>">Informes</a></p></div>
-		<div class="button"><p><a href="<?php echo Yii::app()->createURL("user/update", array("id"=>Yii::app()->user->ID)); ?>">Datos Empresa</a></p></div>
+		<div class="button"><p><a href="<?php echo Yii::app()->createURL("/user/update", array("id"=>Yii::app()->user->ID)); ?>">Datos Empresa</a></p></div>
 		<div class="clear"></div>
 	</div>
 

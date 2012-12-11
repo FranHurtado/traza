@@ -45,13 +45,13 @@
 
 	<div class="row" style="float:left;margin-left:50px;">
 		<?php echo $form->labelEx($model,'city'); ?>
-		<?php echo $form->textField($model,'city'); ?>
+		<?php echo $form->textField($model,'city',array('size'=>10,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'city'); ?>
 	</div>
 
 	<div class="row" style="float:left;margin-left:50px;">
 		<?php echo $form->labelEx($model,'phone'); ?>
-		<?php echo $form->textField($model,'phone',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->textField($model,'phone',array('size'=>10,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'phone'); ?>
 	</div>
 	

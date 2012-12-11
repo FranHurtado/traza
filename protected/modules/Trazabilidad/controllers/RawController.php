@@ -130,8 +130,8 @@ class RawController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Raw('search');
-		$model->unsetAttributes();  // clear any default values
+		$model=new Raw("search");
+		//$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Raw']))
 			$model->attributes=$_GET['Raw'];
 

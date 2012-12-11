@@ -15,18 +15,21 @@
 			<td>Superficie</td>
 			<td>Metodo y materiales</td>
 			<td>Eficacia de la limpieza</td>
+			<td>Empleado</td>
 			<td>Medida correctora</td>
 			<td>Firma responsable</td>
 		</tr>
 		<?php for($i=0;$i<$dias;$i++): ?>
 		<?php
 			$newFecha = strtotime($_POST["start"]) + ($i * 86400);	
+			$Worker = Worker::model()->findByAttributes(array("UserID"=>Yii::app()->user->ID));
 		?>
 			<tr>
 				<td><?php echo date("d-m-Y", $newFecha); ?></td>
 				<td>Suelos</td>
 				<td>Fregado con detergente</td>
 				<td>OK</td>
+				<td><?php echo $Worker->Fullname; ?></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -35,6 +38,7 @@
 				<td>Encimeras</td>
 				<td>Limpiado con bayeta y producto recomendado</td>
 				<td>OK</td>
+				<td><?php echo $Worker->Fullname; ?></td>
 				<td></td>
 				<td></td>
 			</tr>

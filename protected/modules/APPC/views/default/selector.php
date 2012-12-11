@@ -1,3 +1,4 @@
+<h1>Generar informe de APPC</h1>
 <div class="form" style="margin: 0 auto;">
 	<form method="post" name="form-selector" action="<?php echo Yii::app()->createUrl("APPC/default/informe"); ?>">
 		<div style="float:left;">
@@ -8,9 +9,9 @@
 	              // additional javascript options for the date picker plugin
 	              'options'=>array(
 	                'changeYear'=>true,
-	                'yearRange'=>'1930',
+	                'yearRange'=>'2000',
 	                'language'=>'es',
-	                'dateFormat'=>'yy-mm-dd',
+	                'dateFormat'=>'dd-mm-yy',
 	                'monthNames' => array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"),
 	                'monthNamesShort' => array("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"),
 	                'dayNames' => array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"),
@@ -18,7 +19,7 @@
 	                'defaultDate'=>$model->Date,
 	              ),
 	              'htmlOptions'=>array(
-	                'placeholder'=>date("Y-m-d"),
+	                'placeholder'=>date("d-m-Y"),
 	                'id'=>'start'
 	              ),
 	            ));
@@ -33,9 +34,9 @@
 	              // additional javascript options for the date picker plugin
 	              'options'=>array(
 	                'changeYear'=>true,
-	                'yearRange'=>'1930',
+	                'yearRange'=>'2000',
 	                'language'=>'es',
-	                'dateFormat'=>'yy-mm-dd',
+	                'dateFormat'=>'dd-mm-yy',
 	                'monthNames' => array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"),
 	                'monthNamesShort' => array("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"),
 	                'dayNames' => array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"),
@@ -43,7 +44,7 @@
 	                'defaultDate'=>$model->Date,
 	              ),
 	              'htmlOptions'=>array(
-	                'placeholder'=>date("Y-m-d"),
+	                'placeholder'=>date("d-m-Y"),
 	                'id'=>'fin'
 	              ),
 	            ));
@@ -57,3 +58,5 @@
 		<div style="clear:both;"></div>
 	</form>
 </div>
+
+<a href="<?php echo Yii::app()->createURL("APPC"); ?>" class="backButtonA">Volver</a>

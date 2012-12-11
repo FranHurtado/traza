@@ -13,4 +13,4 @@ $this->help="- Rellena todos los campos del formulario y pulsa guardar.";
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
 
-<a href="<?php echo Yii::app()->createURL("APPC"); ?>" class="backButton">Men&uacute;</a>
+<a href="<?php echo Yii::app()->createURL("APPC"); ?>" class="backButtonA">Men&uacute;</a>

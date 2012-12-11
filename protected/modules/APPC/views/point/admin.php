@@ -45,4 +45,4 @@ $this->help = "- Para crear un nuevo punto cr&iacute;tico pulsa el bot&oacute;n 
 	if($dp->totalItemCount == 0){ ?> <script>$(".filters").hide();</script> <?php }
 ?>
 
-<a href="<?php echo Yii::app()->createURL("APPC"); ?>" class="backButton">Men&uacute;</a>
+<a href="<?php echo Yii::app()->createURL("APPC"); ?>" class="backButtonA">Men&uacute;</a>
