@@ -18,7 +18,7 @@
 				$modelRecipeRaws = RecipeRaw::model()->findAllByAttributes(array("RecipeID" => $Recipe->ID));
 				$finalRecipeRaws = "";
 				foreach($modelRecipeRaws as $RecipeRaw):
-					$finalRecipeRaws.=$RecipeRaw->recipe->Name . "(". $RecipeRaw->Quantity ." " . $RecipeRaw->Type . ")<br /> ";
+					$finalRecipeRaws.=$RecipeRaw->raw->Name . "(". $RecipeRaw->Quantity ." " . $RecipeRaw->Type . ")<br /> ";
 				endforeach;
 		?>
 				<tr>

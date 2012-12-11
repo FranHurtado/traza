@@ -10,6 +10,8 @@ class DefaultController extends Controller
 	public function actionInforme()
 	{   
     	if($_POST["start"]){
+    		set_time_limit(600);
+    		
 	        # mPDF
 	        $pdf = Yii::app()->ePdf->mpdf('', 'A4', '','','','','','','','','P');
 	
