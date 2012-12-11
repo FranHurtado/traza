@@ -115,4 +115,20 @@ class Product extends CActiveRecord
             ),
 		));
 	}
+	
+	public function calcFrequency($value)
+	{
+		switch($value)
+		{
+			case 1:
+				return "semana";
+				break;
+			case 2:
+				return "mes";
+				break;
+			case 3:
+				return "a&ntilde;o";
+				break;
+		}
+	}
 }

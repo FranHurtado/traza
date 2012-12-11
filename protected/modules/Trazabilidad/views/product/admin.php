@@ -20,6 +20,9 @@ $this->help = "- Para crear un nuevo producto pulsa el bot&oacute;n \"Nuevo prod
 	'hideHeader'=>true,
 	'columns'=>array(
 		'Name',
+		array(
+			'value'=>'$data->Quantity." / ".$data->calcFrequency($data->Frequency)',
+		),
 		/*
 		'MadeDate',
 		*/
